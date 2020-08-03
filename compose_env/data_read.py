@@ -7,7 +7,7 @@ from const import (
 es = Elasticsearch(host=ES_HOST, port=ES_PORT)
 es = Elasticsearch()
 
-
+#index ve id ile arama işlemi
 def search_by_index_and_id(_index, _id):
     res = es.get(
         index=_index,
@@ -15,7 +15,7 @@ def search_by_index_and_id(_index, _id):
     )
     return res
 
-
+#index ve dizgi ile arama işlemi
 def search_by_index_and_query(_index, _doc_type, query):
     res = es.search(
         index=_index,
