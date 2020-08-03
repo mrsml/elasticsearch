@@ -12,12 +12,7 @@ komutunu çalıştırmalıyız, bu eski versiyonları kaldıracak.
 
 $ sudo apt-get update
 ve
-$ sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
+$ sudo apt-get install apt-transport-https \ ca-certificates \ curl gnupg-agent \ software-properties-common
   
 komutlarını çalıştıracağız, bunlar ön gereksinimler, detaylı bilgi için kurulum sayfasını ziyaret edebilirsiniz.
 
@@ -30,7 +25,7 @@ komutunu çalıştıracağız.
 
 5. Daha sonra:
 
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
    
 komutunu çalıştırıp en son stabil repository'i kuracağız.
 
