@@ -37,12 +37,14 @@ ile paketleri güncelliyoruz.
 > $ apt-cache policy docker-ce
 
 çıktı:
+'''
 docker-ce:
   Installed: (none)
   Candidate: 18.03.1~ce~3-0~ubuntu
   Version table:
      18.03.1~ce~3-0~ubuntu 500
         500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
+'''
 benzeri olacak.
 
 # 8. Son olarak docker'ı kuracağız:
