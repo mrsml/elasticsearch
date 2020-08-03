@@ -12,7 +12,9 @@ komutunu çalıştırmalıyız, bu eski versiyonları kaldıracak.
 # 2.Kaldırma işlemi tamamlandıktan sonra veya ilk defa kurulum için:
 
 > $ sudo apt-get update
+
 ve
+
 > $ sudo apt-get install apt-transport-https \ ca-certificates \ curl gnupg-agent \ software-properties-common
   
 komutlarını çalıştıracağız, bunlar ön gereksinimler, detaylı bilgi için kurulum sayfasını ziyaret edebilirsiniz.
@@ -33,6 +35,7 @@ komutunu çalıştırıp en son stabil repository'i kuracağız.
 
 # 6. Daha sonra tekrar:
 > $ sudo apt update 
+
 ile paketleri güncelliyoruz.
 
 # 7. Standart ubuntu repository yerine docker repository'sini kuracağımızdan emin oluyoruz:
