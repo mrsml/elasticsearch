@@ -1,4 +1,4 @@
-##Bu dökümantasyon docker-compose ile elasticsearch cluster çalıştırmak üzere hazırlanmıştır.
+## Bu dökümantasyon docker-compose ile elasticsearch cluster çalıştırmak üzere hazırlanmıştır.
 
 İlk olarak https://docs.docker.com/engine/install/ adresinden işletim sistemimize uygun olarak docker kurulumu yapmalıyız.
 
