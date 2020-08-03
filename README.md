@@ -1,4 +1,4 @@
-## Bu dökümantasyon docker-compose ile elasticsearch cluster çalıştırmak üzere hazırlanmıştır.
+### Bu dökümantasyon docker-compose ile elasticsearch cluster çalıştırmak üzere hazırlanmıştır.
 
 İlk olarak https://docs.docker.com/engine/install/ adresinden işletim sistemimize uygun olarak docker kurulumu yapmalıyız.
 
@@ -16,7 +16,7 @@ $ sudo apt-get install apt-transport-https \ ca-certificates \ curl gnupg-agent 
   
 komutlarını çalıştıracağız, bunlar ön gereksinimler, detaylı bilgi için kurulum sayfasını ziyaret edebilirsiniz.
 
-# 3. daha sonra GPG anahtarını ekleyeceğiz:
+# 3. Daha sonra GPG anahtarını ekleyeceğiz:
 $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 # 4. Anahtarınızın 9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88 olduğundan emin olmak için:
@@ -53,7 +53,7 @@ Docker kurulumunun başarılı olup olmadığını kontrol etmek için ise:
 
 $ sudo systemctl status docker
 
-## Şimdi docker-compose kurulumuna geçelim.
+### Şimdi docker-compose kurulumuna geçelim.
 
 Docker'ın github sayfasından versiyonu kontrol edelim:
 https://github.com/docker/compose/releases
@@ -66,7 +66,7 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 # 3. Kurulumun başarılı olup olmadığını kontrol edelim:
 $ docker-compose --version
 
-## Docker-compose kurulumu bittikten sonra artık Elasticsearch'i docker-compose ile çalıştıralım:
+### Docker-compose kurulumu bittikten sonra artık Elasticsearch'i docker-compose ile çalıştıralım:
 
 # 1. https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-docker.html adresine giderek buradaki  adımları izleyelim:
 
