@@ -7,7 +7,7 @@ from const import (
 es = Elasticsearch(host= ES_HOST, port= ES_PORT)
 es = Elasticsearch()
 
-
+#cümle veya kelime ile arama
 def full_text_search(keyword, index, field):
     res = es.search(
         index=index,
@@ -21,7 +21,7 @@ def full_text_search(keyword, index, field):
     )
     return res
 
-
+#regex ifadeleri ile arama işlemi
 def regex_search(pat, index, field):
     res = es.search(
         index=index,
@@ -35,7 +35,7 @@ def regex_search(pat, index, field):
     )
     return res
 
-
+#ön ad ile arama işlemi
 def prefix_search(prefix, index, field):
     res = es.search(
         index=index,
