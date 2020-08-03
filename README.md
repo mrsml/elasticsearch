@@ -30,11 +30,11 @@ komutunu çalıştıracağız.
 komutunu çalıştırıp en son stabil repository'i kuracağız.
 
 # 6. Daha sonra tekrar:
-> $ sudo apt update \
+> $ sudo apt update 
 ile paketleri güncelliyoruz.
 
 # 7. Standart ubuntu repository yerine docker repository'sini kuracağımızdan emin oluyoruz:
-> $ apt-cache policy docker-ce \
+> $ apt-cache policy docker-ce 
 çıktı:
 ```
 docker-ce:
