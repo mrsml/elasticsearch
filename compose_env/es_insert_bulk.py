@@ -13,7 +13,7 @@ es = Elasticsearch()
 def load_jsondata():
     with open(SAMPLE_DATA_DIR) as f:
         return json.load(f)
-
+#yığıt halinde veri yükleme işlemi
 def insert_data_by_bulk(data):
     res = helpers.bulk(es, data)
     print(res)
