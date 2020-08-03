@@ -5,8 +5,8 @@
 Ben ubuntu 18.04 versiyonunu kullandım, yani kurulum için:
 
 # 1. Daha önce docker kullandıysak:
-> $ sudo apt-get remove docker docker-engine docker.io containerd runc 
-komutunu çalıştırmalıyız, bu eski versiyonları kaldıracak.
+> $ sudo apt-get remove docker docker-engine docker.io containerd runc \
+Komutunu çalıştırmalıyız, bu eski versiyonları kaldıracak.
 
 # 2.Kaldırma işlemi tamamlandıktan sonra veya ilk defa kurulum için:
 
