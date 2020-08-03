@@ -1,4 +1,4 @@
-### Bu dökümantasyon docker-compose ile elasticsearch cluster çalıştırmak üzere hazırlanmıştır.
+### Bu dökümantasyon python kullanarak docker-compose ile elasticsearch cluster çalıştırmak üzere hazırlanmıştır.
 
 İlk olarak https://docs.docker.com/engine/install/ adresinden işletim sistemimize uygun olarak docker kurulumu yapmalıyız.
 
@@ -6,7 +6,7 @@ Ben ubuntu 18.04 versiyonunu kullandım, yani kurulum için:
 
 # 1. Daha önce docker kullandıysak:
 > $ sudo apt-get remove docker docker-engine docker.io containerd runc \
-Komutunu çalıştırmalıyız, bu eski versiyonları kaldıracak.
+komutunu çalıştırmalıyız, bu eski versiyonları kaldıracak.
 
 # 2.Kaldırma işlemi tamamlandıktan sonra veya ilk defa kurulum için:
 
@@ -83,3 +83,5 @@ Burada dikkat edilmesi gereken, eğer elasticsearch servisi zaten çalışmakta 
 # 3. Eğer buraya kadar bir sorunla karşılaşılmadı ise bir "_cat/nodes" isteği atarak ağın çalışıp çalışmadığını ve hangi node'ların ayakta olduğuu görebiliriz.
 
 > $ curl -X GET "localhost:9200/_cat/nodes?v&pretty"
+
+### Artık python kullanarak elasticsearch ağına veri yükleme, silme, arama vb. gibi işlemleri yapabiliriz. Bunların detayları dosyalar üzerinde açıklanmıştır.
