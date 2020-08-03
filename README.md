@@ -12,7 +12,7 @@ komutunu çalıştırmalıyız, bu eski versiyonları kaldıracak.
 
 > $ sudo apt-get update
 ve
-> $ sudo apt-get install apt-transport-https \ ca-certificates \ curl gnupg-agent \ software-properties-common
+> $ sudo apt-get install apt-transport-https \ ca-certificates \ curl gnupg-agent \ software-properties-common \
   
 komutlarını çalıştıracağız, bunlar ön gereksinimler, detaylı bilgi için kurulum sayfasını ziyaret edebilirsiniz.
 
@@ -20,22 +20,21 @@ komutlarını çalıştıracağız, bunlar ön gereksinimler, detaylı bilgi iç
 > $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 # 4. Anahtarınızın 9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88 olduğundan emin olmak için:
-> $ sudo apt-key fingerprint 0EBFCD88
+> $ sudo apt-key fingerprint 0EBFCD88 \
 komutunu çalıştıracağız.
 
 # 5. Daha sonra:
 
-> $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+> $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" \
    
 komutunu çalıştırıp en son stabil repository'i kuracağız.
 
 # 6. Daha sonra tekrar:
-> $ sudo apt update
+> $ sudo apt update \
 ile paketleri güncelliyoruz.
 
 # 7. Standart ubuntu repository yerine docker repository'sini kuracağımızdan emin oluyoruz:
-> $ apt-cache policy docker-ce
-
+> $ apt-cache policy docker-ce \
 çıktı:
 ```
 docker-ce:
@@ -49,11 +48,11 @@ benzeri olacak.
 
 # 8. Son olarak docker'ı kuracağız:
 
-> $ sudo apt install docker-ce
+> $ sudo apt install docker-ce \
 
 Docker kurulumunun başarılı olup olmadığını kontrol etmek için ise:
 
-> $ sudo systemctl status docker
+> $ sudo systemctl status docker \
 
 ### Şimdi docker-compose kurulumuna geçelim.
 
@@ -76,7 +75,7 @@ ilk olarak bir docker-compose.yml dosyası oluşturacağız, içeriği belirtile
 
 # 2. Daha sonra docker-compose'u ayağa kaldıralım:
 
-> $ docker-compose up
+> $ docker-compose up \
 
 Burada dikkat edilmesi gereken, eğer elasticsearch servisi zaten çalışmakta ise özellikle belirtilmemişse aynı zamanda docker-compose'un da kullandığı 9200 portunu kullanacak, bu yüzden önce elasticsearch servisini kapatmalıyız:
 
