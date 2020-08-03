@@ -10,14 +10,13 @@ data = {
         "body_fat": "15%",
         "interest": ["couch potato", "eat and sleep"]
     }
-
+#index oluşturma işlemi
 def create_index(index):
     es.indices.create(index=index, ignore=400)
-
+#tek bir veri yükleme işlemi
 def insert_one_data(_index, data):
-    # index and doc_type you can customize by yourself
     res = es.index(index=_index, doc_type='authors', id=5, body=data)
-    # index will return insert info: like as created is True or False
+    # index oluşturulabilirse True
     print(res)
     """
     {'_index': 'test-index', '_type': 'authors', '_id': '5', '_version': 1, 'result': 'created', '_shards': {'total': 2, 's
