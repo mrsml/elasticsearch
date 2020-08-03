@@ -8,7 +8,7 @@ from const import (
 es = Elasticsearch(host= ES_HOST, port= ES_PORT)
 es = Elasticsearch()
 
-
+#index ile güncelleme işlemi
 def update_data_by_index(_index, _doc_type, _id, update_data):
     res = es.update(
         index=_index,
@@ -18,7 +18,7 @@ def update_data_by_index(_index, _doc_type, _id, update_data):
     )
     return res
 
-
+#dizgi ile güncelleme işlemi
 def update_by_query(_index, query, field, update_data):
     _inline = "ctx._source.{field}={update_data}".format(field=field, update_data=update_data)
     _query = {
@@ -32,7 +32,7 @@ def update_by_query(_index, query, field, update_data):
     res = es.update_by_query(body=_query, index=_index)
     return res
 
-
+#yığın ile arama işlemi
 def update_by_bulk(_index, _id, update_data, doc_type):
     action = [{
         "_id": _id,
